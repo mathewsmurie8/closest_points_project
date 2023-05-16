@@ -31,7 +31,7 @@ if DEVELOPMENT_MODE is True:
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.postgresql",
-            "NAME": os.path.join(BASE_DIR, "closest_points_db.postgresql"),
+            "NAME": os.path.join(BASE_DIR, "closestpointsdb.postgresql"),
         }
     }
 elif len(sys.argv) > 0 and sys.argv[1] != 'collectstatic':
